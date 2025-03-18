@@ -1,0 +1,343 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+header{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.headerLogo {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+ul{
+display: flex;
+gap: 12px;
+}
+ul > li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+/* sidebar */
+.sideBar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: white;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  align-items: center;
+display: none;
+margin-right: 50px;
+}
+.menuBar{
+  padding-top: 3px;
+  width: 30px;
+ display:none;
+}
+.close{
+  text-decoration: none;
+  padding-top: 6px;
+ width:100px ;
+ height:50px ;
+ margin-right: 180px;
+}
+
+.sideBar li{
+  text-align: center;
+width: 100%;
+}
+/* .sideBar li:hover{
+  background-color: rgba(128, 128, 128, 0.256);
+} */
+li> a{
+    color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+li> a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+  }
+
+#profile{
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.section__pic-container{
+    
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid black;
+   
+}
+  .profilePicture{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: 1px solid black;
+}  
+ .section__text__p1{
+    font-weight: 500;
+    text-align: center;
+ } 
+ .title{
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-align: center;
+ }
+ .section__text__p2{
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 600;
+ }
+ .btn-container{
+    margin-top: 20px;
+    text-align: center;
+ }
+.btn1{
+    width: 130px;
+    padding: 17px 12px;
+    font-weight:bold;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 1.3px solid black;
+}
+.btn1:hover {
+    background: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+  }
+
+.btn2{
+    width: 130px;
+    padding: 17px 12px;
+    font-weight:bold;
+    background: rgb(53, 53, 53);
+    color: white;
+    border-radius: 30px;
+    border: 1.3px solid black;
+    margin-left: 10px;
+}
+
+.btn2:hover{
+    cursor: pointer;
+    background-color: black;
+   
+}
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+ }
+ .icon {
+    cursor: pointer;
+    height: 2rem;
+  }
+
+  /* About styling */
+  #about{
+    position: relative;
+  }
+  .section-container{
+   
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 80px;
+    font-weight: 300;
+  }
+  .about-pic{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    
+  }
+  .about-details-container{
+    
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+  }
+  .about-containers{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  .details-container{
+   border: 1px solid black;
+   padding: 15px;
+   border-radius: 1rem;
+  }
+  .text-container{
+    margin-top: 15px;
+  }
+  .section__pic-container2{
+    
+    width: 350px;
+    height: 350px;
+    border-radius: 50px;
+    margin: 5px auto;
+   
+}
+.educationStatus{
+    width:100%;
+    
+    
+}
+#icon_arrow{
+position: absolute;
+right: 150px;
+bottom: 2.5rem;
+}
+
+/* Experince styling */
+#experience{
+    margin-top: 50px;
+position: relative;
+}
+.details-container{
+    width: 70%;
+   margin: 5px auto;
+}
+.experience-sub-title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+.article-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+#experienceArrow{
+    position: absolute;
+right: 150px;
+}
+
+/* Project Stying */
+#projects{
+  margin-top: 50px;
+  position: relative;
+}
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+.project-img {
+  border-radius: .5rem;
+  width: 100%;
+  height: 100%;
+}
+.project-btn {
+  color: black;
+  border: 2px solid rgb(163, 163, 163) ;
+ width: 120px;
+ padding: 10px 2px;
+ border-radius: 30px;
+ font-size: 1rem;
+ font-weight: 600;
+}
+.project-btn:hover{
+ background-color: black;
+ color: white;
+ border:none;
+}
+/* .experience-details-container{
+  border: 1px solid black;
+} */
+.project-containers{
+  display: grid;
+  grid-template-columns: 50% 50% ;
+}
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+.arrow{
+  position: absolute;
+  right: 150px;
+}
+
+/* Contact styling */
+
+/* #contact {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column;
+  height: 70vh;
+} */
+ .contact-info-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ }
+
+.contact-info-upper-container{
+  display: flex;
+  max-width:600px ;
+  border: 1px solid black;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 25px;
+  margin: 10px auto;
+  border-radius: 30px;
+}
+.contact_link{
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.contact_link:hover{
+  color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+/* Footer styling */
+footer{
+  margin-top: 50px;
+  max-width:500px ;
+  margin: 10px auto;
+  text-align: center;
+}
+footer> nav{
+  margin-top: 30px;
+  justify-content: space-between;
+}
+footer > p {
+  margin-top: 30px;
+}

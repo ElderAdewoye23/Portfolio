@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaQueries.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+  <!-- Header section -->
+    <header>
+        <h1 class="headerLogo">Adewoye <span class="spanHeaderLogo">Emmanuel</span> </h1>
+        <nav>
+           <ul>
+            <li class="hideMenu"><a href="#about">About</a></li>
+            <li class="hideMenu"><a href="#experience">Experience</a></li>
+            <li class="hideMenu"><a href="#projects">Projects</a></li>
+            <li class="hideMenu"><a href="#contact">Contact</a></li>
+            <li onclick="showSideBar()"  ><img class="menuBar" src="./assets/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""> </li>
+           </ul>
+            <!-- Desktop menu -->
+           <ul class="sideBar">
+            <li><img onclick="hideSideBar()" class="close" src="./assets/close_18dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" alt=""> </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+           </ul>
+        </nav>
+       
+       
+    </header>
+
+    
+    <!-- Intro section -->
+        <section id="profile">
+            <div class="section__pic-container">
+              <img  class="profilePicture" src="./assets/newEdit3.jpg" alt=" profile picture"  /> 
+            </div>
+            <div class="section__text">
+              <p class="section__text__p1">Hello, I'm</p>
+              <h1 class="title">Adewoye Emmanuel</h1>
+              <p class="section__text__p2"> A Frontend Developer</p>
+              <div class="btn-container">
+                <button
+                  class="btn1 "
+                  onclick="window.open('./assets/ EMMANUEL-ADEWOYE Resume.docx')"
+                >
+                  Download CV
+                </button>
+                <button class="btn2 " onclick="location.href='./#contact'">
+                  Contact Info
+                </button>
+              </div>
+              <div id="socials-container">
+                <img
+                  src="./assets/linkedin.png"
+                  alt="My LinkedIn profile"
+                  class="icon"
+                  onclick="location.href= 'https://www.linkedin.com/in/adewoye-emmanuel'"  
+                />
+                <img
+                  src="./assets/github.png"
+                  alt="My Github profile"
+                  class="icon"
+                  onclick="location.href='https://github.com/ElderAdewoye23?tab=repositories'"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- About section -->
+          <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+              <div class="section__pic-container2">
+                <img
+                  src="./assets/newEdit1.jpg"
+                  alt="Profile picture"
+                  class="about-pic"
+                />
+              </div>
+              <div class="about-details-container">
+                <div class="about-containers">
+                  <div class="details-container">
+                    <img
+                      src="./assets/experience.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <h3>Experience</h3>
+                    <p>2+ years <br />Frontend Development</p>
+                  </div>
+                  <div class="details-container">
+                    <img
+                      src="./assets/education.png"
+                      alt="Education icon"
+                      class="icon"
+                    />
+                    <h3>Education</h3>
+                    <p class="educationStatus">B.Sc. <span>Agriculture</span></p>
+                  </div>
+                </div>
+                <div class="text-container">
+                  <p>
+                    Hi, I’m Adewoye Emmanuel!
+                    I’m a passionate frontend developer with a passion for crafting responsive, high-performance websites and applications that prioritize user experience. With a solid foundation in modern frameworks like React, Vue.js, and Next.js, I build intuitive interfaces that seamlessly blend functionality and designs using accessible design software like TailwindCSS and CSS animations.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./assets/arrow.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              id="icon_arrow"
+              onclick="location.href='./#experience'"
+            />
+          </section>
+
+          <!-- Experience Section -->
+           
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container" >
+        <div class="about-containers" >
+          <div class="details-container" >
+            <h2 class="experience-sub-title" >Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                 
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <diIntermediatev>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </diIntermediatev>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        id="experienceArrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <!-- Projects Section -->
+     
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="project-containers">
+          <!-- project one -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/static.PNG"
+                alt="Project 1"
+                class="project-img"
+              />  
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ElderAdewoye23/static-webpage'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://elderadewoye23.github.io/static-webpage/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- project two -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/recipe.PNG"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ElderAdewoye23/Recipe-page'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://elderadewoye23.github.io/Recipe-page/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- project three -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Topic Page.PNG"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+<!-- project four -->
+<div class="details-container color-container">
+  <div class="article-container">
+    <img
+      src="./assets/practice.PNG"
+      alt="Project 4"
+      class="project-img"
+    />
+  </div>
+  <h2 class="experience-sub-title project-title">Project Four</h2>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://github.com/ElderAdewoye23/practise-portfolio'"
+    >
+      Github
+    </button>
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://elderadewoye23.github.io/practise-portfolio/'"
+    >
+      Live Demo
+    </button>
+  </div>
+</div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- Contact section -->
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a class="contact_link" href="mailto:adewoyee73@gmail.com">adewoyee73@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a class="contact_link" target="_blank"  href="https://www.linkedin.com/in/adewoye-emmanuel">Adewoye Emmanuel</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+     <footer>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li></ul>
+    </nav>
+    <p >Copyright &copy; 2025 Adewoye Emmanuel. All Rights Reserved.</p>
+     </footer>
+
+     <!-- Javascript Code -->
+      <script src="./index.js"></script>
+</body>
+</html>
